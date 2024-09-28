@@ -41,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        bt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_Bai2 = new Intent(MainActivity.this,bai2_atvt1.class);
+                startActivity(intent_Bai2);
+            }
+        });
+
 
 
     }

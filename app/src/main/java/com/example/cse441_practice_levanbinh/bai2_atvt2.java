@@ -30,6 +30,8 @@ public class bai2_atvt2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intnet_b2_BackMain = new Intent(bai2_atvt2.this,MainActivity.class);
                 startActivity(intnet_b2_BackMain);
+                // Neu muon tro ve Activity truoc thi dung ham finish()
+                //finish();
             }
         });
     }
