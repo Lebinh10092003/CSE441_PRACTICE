@@ -11,37 +11,26 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
-    // Khai bao cac bien giao dien
-    Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9,bt10,bt11,bt12,bt13,bt14,bt15,bt16,bt17,bt18,bt19,bt20,bt21,bt22,bt23;
-
+public class bai2_atvt2 extends AppCompatActivity {
+    //Khai báo biến giao diện
+    Button bt_Ok_b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_bai2_atvt2);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        bt1 = findViewById(R.id.button1);
-        bt2 = findViewById(R.id.button2);
-        bt3 = findViewById(R.id.button3);
-        bt4 = findViewById(R.id.button4);
-        bt5 = findViewById(R.id.button5);
-        bt6 = findViewById(R.id.button6);
-        bt7 = findViewById(R.id.button7);
-
-        bt1.setOnClickListener(new View.OnClickListener() {
+        bt_Ok_b2 = findViewById(R.id.bt_Ok_b2);
+        bt_Ok_b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_Bai1 = new Intent(MainActivity.this,Bai1.class);
-                startActivity(intent_Bai1);
+                Intent intnet_b2_BackMain = new Intent(bai2_atvt2.this,MainActivity.class);
+                startActivity(intnet_b2_BackMain);
             }
         });
-
-
-
     }
 }
