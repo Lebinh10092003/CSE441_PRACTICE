@@ -48,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent_Bai2);
             }
         });
+        bt3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_Bai3 = new Intent(MainActivity.this,bai3.class);
+                startActivity(intent_Bai3);
+            }
+        });
 
 
 
