@@ -55,8 +55,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent_Bai3);
             }
         });
-
-
+        bt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_Bai4 = new Intent(MainActivity.this,bai4_atvt1.class);
+                startActivity(intent_Bai4);
+            }
+        });
 
     }
 }
